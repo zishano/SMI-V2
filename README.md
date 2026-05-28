@@ -44,13 +44,4 @@ booktitle={Forty-first International Conference on Machine Learning},
 year={2024},
 url={https://openreview.net/forum?id=T0lFfO8HaK}
 }
-
-@inproceedings{li2025eff,
-  title={Eff-DFQT: Efficient Model Inversion for Data-free Quantization of Vision Transformers},
-  author={Li, Mengkui and Chen, Xinrui and Chen, Hai and Zhao, Kang and Zhang, Yanping and Zhao, Shu and Qian, Fulan},
-  booktitle={2025 IEEE International Conference on Multimedia and Expo (ICME)},
-  pages={1--6},
-  year={2025},
-  organization={IEEE}
-}
 ```
