@@ -1,11 +1,13 @@
-# [ICME 2025] Eff-DFQT: Efficient Model Inversion for Data-free Quantization of Vision Transformers
+# [] Sparse Model Inversion V2: Towards Efficient and Accurate Inversion of Vision Transformers for Data-Free Compression
 
 ## Abstract
-Model inversion is a promising technique for raw data reconstruction, especially in data-free quantization of Vision Transformers (ViTs). Previous inversion methods for ViTs have focused on extracting necessary foreground information while discarding irrelevant noise. However, these mode inversion methods for ViTs are inefficient in terms of data synthesis speed. In this paper, we propose a novel method to accelerate model inversion for efficient data-free quantization of ViTs(Eff-DFQT). Our method has the following features. 1) Token fusion strategy tailored for model inversion. We propose a token fusion strategy tailored for model inversion to lower the computations for image inversion. 2) Label compensation function. We propose a label compensation function to model the label uncertainty of the inverted image and accurately capture the real labels, which improves the quality of the inverted data by compensating for the negative effects of token reduction. Extensive experimental results demonstrate that Eff-DFQT, significantly accelerates the inversion process through token fusion strategy tailored for model inversion and label compensation function, while maintaining or even improving model performance in data-free quantization of ViTs.
+Vision transformers (ViTs)  have achieved significant success in various computer vision tasks, enabling their deployment on privacy-protected devices. These devices generally have privacy protection requirements, which motivates the development of model inversion techniques such as Sparse Model Inversion (SMI) specifically designed for ViTs.
+SMI is a promising approach for model inversion, enabling the reconstruction of original data in data-free compression scenarios. Although SMI improves inversion efficiency via background patch pruning, it provides limited treatment of the accuracy dimension. Therefore, for privacy-protected devices, it is crucial to develop accurate and efficient model inversion strategies. 
+In this paper, we propose a two-pronged approach, SMI V2, for efficient and accurate model inversion toward data-free compression of ViTs.
+Firstly, in terms of efficiency, we identify the redundancy in current inversion techniques by analyzing the token value similarity index. We introduce a token fusion strategy, specifically designed for the inversion setting, that identifies and merges the most semantically similar tokens, thereby reducing the computational complexity of image inversion by decreasing the number of tokens involved. 
+Secondly, for accuracy, we clarify the uncertainty of the inverted image label by measuring the label discrepancy and analyzing the semantic boundary. We then introduce a label compensation function to capture the ground-truth labels of the images accurately.
+We establish data-free model compression benchmarks, including quantization, sparsity, and distillation. Extensive experimental results demonstrate that SMI V2 significantly accelerates the inversion process through the token fusion strategy and label compensation function while maintaining or enhancing model performance in data-free compression of ViTs.
 
-# Eff-DFQT
-We plan to make the source code related to this paper public in the near future. Please continue to follow this project for the latest information and updates. Thank you for your patience and support!
-![img10](https://github.com/user-attachments/assets/5500b323-5a2d-4ac6-bfa7-451ef45b8d2b)
 
 # Requirements
 One high-end GPU for inference such as an RTX 3090
@@ -13,7 +15,7 @@ One high-end GPU for inference such as an RTX 3090
 * pip install -r requirements.txt
 
 # Model Quantization
-  - Example: Quantize (W8/A8) DeiT/16-Base with inverted data (Eff-DFQT).
+  - Example: Quantize (W8/A8) DeiT/16-Base with inverted data.
 ```
 python test_quant_tome_test.py --model deit_base_16_imagenet \
     --prune_it 50 100 200 300 \
@@ -30,16 +32,7 @@ python test_quant_tome_test.py --model deit_base_16_imagenet \
 ```
 
 ## BibTex
-```bash
-@inproceedings{li2025eff,
-  title={Eff-DFQT: Efficient Model Inversion for Data-free Quantization of Vision Transformers},
-  author={Li, Mengkui and Chen, Xinrui and Chen, Hai and Zhao, Kang and Zhang, Yanping and Zhao, Shu and Qian, Fulan},
-  booktitle={2025 IEEE International Conference on Multimedia and Expo (ICME)},
-  pages={1--6},
-  year={2025},
-  organization={IEEE}
-}
-```
+
 
 ## Acknowledge
 ```bash
@@ -50,5 +43,14 @@ author={Zixuan Hu and Yongxian Wei and Li Shen and Zhenyi Wang and Lei Li and Ch
 booktitle={Forty-first International Conference on Machine Learning},
 year={2024},
 url={https://openreview.net/forum?id=T0lFfO8HaK}
+}
+
+@inproceedings{li2025eff,
+  title={Eff-DFQT: Efficient Model Inversion for Data-free Quantization of Vision Transformers},
+  author={Li, Mengkui and Chen, Xinrui and Chen, Hai and Zhao, Kang and Zhang, Yanping and Zhao, Shu and Qian, Fulan},
+  booktitle={2025 IEEE International Conference on Multimedia and Expo (ICME)},
+  pages={1--6},
+  year={2025},
+  organization={IEEE}
 }
 ```
