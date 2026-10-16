@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">SMI V2</title>
+  <desc id="desc">A compact visual identity for Sparse Model Inversion V2, with active Vision Transformer tokens converging into fused tokens.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1426"/>
+      <stop offset="1" stop-color="#14233b"/>
+    </linearGradient>
+    <linearGradient id="token" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#83ebda"/>
+      <stop offset="1" stop-color="#5fb4e8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="320" rx="20" fill="url(#background)"/>
+  <rect x="1" y="1" width="1198" height="318" rx="19" fill="none" stroke="#46617c" stroke-opacity=".45"/>
+  <g stroke="#42607b" stroke-opacity=".16">
+    <path d="M0 64h1200M0 128h1200M0 192h1200M0 256h1200"/>
+    <path d="M64 0v320M128 0v320M192 0v320M256 0v320M320 0v320M384 0v320M448 0v320M512 0v320M576 0v320M640 0v320M704 0v320M768 0v320M832 0v320M896 0v320M960 0v320M1024 0v320M1088 0v320M1152 0v320"/>
+  </g>
+  <rect x="49" y="50" width="4" height="218" rx="2" fill="#75e2d1"/>
+  <text x="76" y="72" fill="#80dece" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2.5">RESEARCH PROJECT  /  VISION TRANSFORMERS</text>
+  <text x="72" y="164" fill="#f5f8ff" font-family="Arial, sans-serif" font-size="83" font-weight="700" letter-spacing="-3">SMI <tspan fill="#7be2d5">V2</tspan></text>
+  <text x="76" y="207" fill="#c9d7eb" font-family="Arial, sans-serif" font-size="23">Sparse Model Inversion</text>
+  <text x="76" y="260" fill="#94a9c3" font-family="Arial, sans-serif" font-size="16">TOKEN FUSION   /   LABEL COMPENSATION   /   DATA-FREE COMPRESSION</text>
+  <path d="M669 45v230" stroke="#64819b" stroke-opacity=".55"/>
+  <rect x="712" y="48" width="440" height="224" rx="16" fill="#142a42" fill-opacity=".92" stroke="#5e8297" stroke-opacity=".55"/>
+  <text x="740" y="83" fill="#afc4d8" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.8">REDUNDANCY-AWARE INVERSION</text>
+  <g fill="url(#token)">
+    <rect x="742" y="111" width="33" height="33" rx="6"/>
+    <rect x="786" y="111" width="33" height="33" rx="6"/>
+    <rect x="830" y="111" width="33" height="33" rx="6"/>
+    <rect x="742" y="155" width="33" height="33" rx="6"/>
+    <rect x="786" y="155" width="33" height="33" rx="6"/>
+    <rect x="830" y="155" width="33" height="33" rx="6"/>
+  </g>
+  <g fill="none" stroke="#698ba2" stroke-width="1.5" stroke-dasharray="4 4">
+    <rect x="874" y="111" width="33" height="33" rx="6"/>
+    <rect x="874" y="155" width="33" height="33" rx="6"/>
+  </g>
+  <path d="M931 149h53m-12-10 12 10-12 10" fill="none" stroke="#95dcca" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#9b9aed">
+    <rect x="1007" y="133" width="33" height="33" rx="6"/>
+    <rect x="1051" y="133" width="33" height="33" rx="6"/>
+    <rect x="1095" y="133" width="33" height="33" rx="6"/>
+  </g>
+  <text x="742" y="229" fill="#a9bfd3" font-family="Arial, sans-serif" font-size="14">Active tokens</text>
+  <text x="1006" y="229" fill="#c6c3f1" font-family="Arial, sans-serif" font-size="14">Fused tokens</text>
+</svg>
